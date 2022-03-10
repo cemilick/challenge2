@@ -1,5 +1,6 @@
-import { View, Image, Dimensions, StyleSheet, FlatList, StatusBar, Pressable } from 'react-native'
-import React, { useState } from 'react'
+import { View, Image, Dimensions, StyleSheet, FlatList, StatusBar, Pressable } from 'react-native';
+import React, { useState } from 'react';
+
 import Button from '../../components/Button';
 import Card from '../../components/Card';
 import Helvetica from '../../components/Helvetica';
@@ -16,10 +17,9 @@ export default function Home(props) {
     { merk: 'Daihatsu Xenia 5', users: 5, briefcase: 4, key: '5' },
     { merk: 'Daihatsu Xenia 6', users: 5, briefcase: 4, key: '6' },
   ]) 
-  const [color, setColor] = useState('#d3d9fd')
   return (
     <SafeAreaView style={styles.flex}>
-      <StatusBar backgroundColor={color} />
+      <StatusBar barStyle='light-content' backgroundColor='#d3d9fd' />
       <MyModal modalVisible={modalVisible} setModalVisible={setModalVisible}/>
       <View style={styles.header}>
         <View style={styles.headerContent}>

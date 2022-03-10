@@ -16,6 +16,4 @@ const Helvetica = ({type='', children, size=12, marginBottom=0, color="black", a
     )
 }
 
-
-
 export default Helvetica;

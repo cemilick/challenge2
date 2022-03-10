@@ -1,5 +1,6 @@
-import { View, StyleSheet, Image, Dimensions, StatusBar } from 'react-native'
-import React, {useState} from 'react'
+import { View, StyleSheet, Image, Dimensions, StatusBar } from 'react-native';
+import React, { useState } from 'react';
+
 import Helvetica from '../../components/Helvetica';
 import Button from '../../components/Button';
 import MyModal from '../../components/Modal';
@@ -9,7 +10,7 @@ export default function Profile() {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <SafeAreaView>
-      <StatusBar backgroundColor='white' />
+      <StatusBar barStyle='dark-content' backgroundColor='#fff' />
       <View style={styles.container}>
         <MyModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
         <Helvetica type='-Bold' size={14}>Akun</Helvetica>

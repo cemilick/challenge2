@@ -1,9 +1,10 @@
-import { StyleSheet,FlatList } from 'react-native';
-import React, {useState} from 'react';
+import { StyleSheet,FlatList, StatusBar } from 'react-native';
+import React, { useState } from 'react';
+
 import Helvetica from '../../components/Helvetica';
 import Card from '../../components/Card';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 import SafeAreaView from 'react-native-safe-area-view';
+
 export default function List({title="Daftar Mobil"}) {
   const [car, setCat] = useState([
     { merk: 'Daihatsu Xenia 1', users: 5, briefcase: 4, key:'1' },
@@ -21,6 +22,7 @@ export default function List({title="Daftar Mobil"}) {
   ]);
   return (
     <SafeAreaView style={styles.carList}>
+    <StatusBar barStyle='dark-content' backgroundColor='#fff' />
       <Helvetica type='-Bold' size={14} marginBottom={30}>{title}</Helvetica>
       <FlatList data={car} renderItem={({item}) => {
         return (

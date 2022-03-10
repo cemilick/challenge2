@@ -1,5 +1,6 @@
-import { View, Modal, Image, Dimensions, StyleSheet } from 'react-native'
-import React from 'react'
+import { View, Modal, Image, Dimensions, StyleSheet } from 'react-native';
+import React from 'react';
+
 import Helvetica from '../Helvetica';
 import Button from '../Button';
 

@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Icons from 'react-native-vector-icons/Feather';
+
 import Home from '../screens/Home';
 import List from '../screens/List';
 import Profile from '../screens/Profile';
-import Icons from 'react-native-vector-icons/Feather';
 
 const Tab = createBottomTabNavigator();
 

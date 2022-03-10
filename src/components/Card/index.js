@@ -1,8 +1,9 @@
-import { View, Text, Image, StyleSheet } from 'react-native'
-import React from 'react'
-import Icons from 'react-native-vector-icons/Feather';
-import Helvetica from '../Helvetica';
+import { View, Text, Image, StyleSheet } from 'react-native';
+import React from 'react';
 
+import Icons from 'react-native-vector-icons/Feather';
+
+import Helvetica from '../Helvetica';
 
 export default function Card({merk, users, briefcase, harga="Rp 245.000"}) {
   return (
